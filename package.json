@@ -4,14 +4,18 @@
   "main": "node_modules/expo/AppEntry.js",
   "description": "",
   "scripts": {
-    "expo": "expo start",
-    "start": "vite",
-    "dev": "vite",
     "build": "vite build",
+    "ci:unit-tests": "vitest run",
+    "ci:e2e-tests": "npx playwright test",
+    "ci:lint": "eslint src/** --no-error-on-unmatched-pattern",
+    "codegen": "npx playwright codegen",
+    "dev": "vite",
+    "e2e": "npx playwright test",
+    "expo": "expo start",
+    "lint": "eslint src/** --fix --no-error-on-unmatched-pattern",
+    "start": "vite",
     "serve": "vite preview",
-    "test": "vitest",
-    "unit-tests": "vitest run",
-    "e2e-tests": "npx playwright test"
+    "test": "vitest --ui"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

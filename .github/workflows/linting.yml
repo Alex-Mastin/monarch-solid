@@ -1,7 +1,8 @@
-name: Run automated tests
+name: Run linter
 on: [push]
 jobs:
-  run_automated_tests:
+  eslint:
+    name: Run linter
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -12,7 +13,5 @@ jobs:
           version: 7
       - name: Install project dependencies
         run: pnpm install --frozen-lockfile
-      - name: Run unit tests
-        run: pnpm run ci:unit-tests
-      - name: Run end-to-end tests
-        run: pnpm run ci:e2e-tests
+      - name: Run ESLint
+        run: pnpm run ci:lint
