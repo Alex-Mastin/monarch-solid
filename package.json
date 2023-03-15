@@ -1,0 +1,43 @@
+{
+  "name": "monarch",
+  "version": "0.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "description": "",
+  "scripts": {
+    "expo": "expo start",
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "vitest",
+    "unit-tests": "vitest run",
+    "e2e-tests": "npx playwright test"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@playwright/test": "^1.31.2",
+    "@solidjs/testing-library": "^0.6.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-solid": "^0.11.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "jsdom": "^21.1.0",
+    "sass": "^1.58.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1",
+    "vite-plugin-solid": "^2.5.0",
+    "vitest": "^0.28.4"
+  },
+  "dependencies": {
+    "expo": "~48.0.6",
+    "expo-status-bar": "~1.4.4",
+    "firebase": "^9.17.2",
+    "react": "18.2.0",
+    "react-native": "0.71.3",
+    "solid-js": "^1.6.10"
+  }
+}
