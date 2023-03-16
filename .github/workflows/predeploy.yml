@@ -1,7 +1,7 @@
 name: Pre-deploy
 on: [push]
 jobs:
-  run_automated_tests:
+  pre_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
