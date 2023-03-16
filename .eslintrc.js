@@ -24,21 +24,22 @@ module.exports = {
     'no-unused-vars': ['warn', { 'ignoreRestSiblings': true }],
     'object-curly-spacing': ['warn', 'always', { 'objectsInObjects': true }],
     'quotes': ['warn', 'single', { 'allowTemplateLiterals': true, 'avoidEscape': false }],
-    'react/prop-types': 'off',
-    'react/no-unescaped-entities': 'off',
+    'react/display-name': 'off',
     'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
     'react/jsx-first-prop-new-line': ['warn', 'multiline'],
     'react/jsx-key': 'off',
     'react/jsx-max-props-per-line': ['warn', { 'maximum': 1, 'when': 'always' }],
     'react/jsx-one-expression-per-line': ['warn', { 'allow': 'single-child' }],
+    'react/jsx-sort-props': ['warn'],
     'react/jsx-uses-react': 'off',
-    'react/display-name': 'off',
     'react/no-deprecated': 'off',
+    'react/no-unescaped-entities': 'off',
+    'react/no-unstable-nested-components': 'warn',
+    'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'semi': ['warn', 'never', { 'beforeStatementContinuationChars': 'always' }],
-    'unused-imports/no-unused-imports': 'warn',
-    'react/no-unstable-nested-components': 'warn',
-    'react/jsx-sort-props': ['warn']
+    'sort-keys': 'warn',
+    'unused-imports/no-unused-imports': 'warn'
   },
   settings: {
     react: {
