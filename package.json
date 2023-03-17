@@ -24,6 +24,7 @@
     "@types/testing-library__jest-dom": "^5.14.5",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
+    "@vitest/ui": "^0.29.3",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.32.0",
     "eslint-plugin-react": "^7.32.1",
