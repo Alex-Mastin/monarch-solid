@@ -1,17 +1,28 @@
+# dependencies
 node_modules/
-.expo/
-dist/
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
-web-build/
 
-# macOS
+# recent devices
+.expo/
+
+# build
+dist/
+
+# logs
+npm-debug.*
+playwright-report/
+
+# generated types
+.astro/
+
+# macOS-specific files
 .DS_Store
+
+# environment variables
+.env
 
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
+
+# editor files
+.idea/
+.vscode/

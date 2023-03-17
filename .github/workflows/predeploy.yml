@@ -1,11 +1,17 @@
 name: Pre-deploy
-on: [push]
+on: 
+  push:
+    branches:
+      - '!main'
 jobs:
   pre_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          # Fetch all commits, instead of shallow fetch
+          fetch-depth: 0
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:

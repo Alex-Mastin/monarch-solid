@@ -1,0 +1,25 @@
+name: Create changelog
+on:
+  push:
+    branches:
+      - main
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          # Fetch all commits, instead of shallow fetch
+          fetch-depth: 0
+      - name: Create changelog
+        uses: TriPSs/conventional-changelog-action@v3.18.0
+        with:
+          github-token: ${{ secrets.github_token }}
+      - name: Create release
+        uses: actions/create-release@v1
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag }}
+          release_name: ${{ steps.changelog.outputs.tag }}
+          body: ${{ steps.changelog.outputs.clean_changelog }}

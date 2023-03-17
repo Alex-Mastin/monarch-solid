@@ -11,5 +11,6 @@
     "types": ["vite/client", "@testing-library/jest-dom"],
     "noEmit": true,
     "isolatedModules": true
-  }
+  },
+  "extends": "astro/tsconfigs/strict"
 }
