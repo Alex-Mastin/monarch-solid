@@ -1,4 +1,4 @@
-name: Postdeploy
+name: Post-deploy
 on:
   push:
     branches:
