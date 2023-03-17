@@ -1,8 +1,8 @@
 name: Pre-deploy
 on: 
   push:
-    branches:
-      - '!main'
+    branches-ignore:
+      - main
 jobs:
   pre_deploy:
     runs-on: ubuntu-latest

@@ -1,4 +1,4 @@
-name: Create changelog
+name: Postdeploy
 on:
   push:
     branches:
