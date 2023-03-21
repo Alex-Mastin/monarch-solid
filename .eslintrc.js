@@ -34,6 +34,7 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/no-deprecated': 'off',
     'react/no-unescaped-entities': 'off',
+    'react/no-unknown-property': ['error', { ignore: ['class'] }],
     'react/no-unstable-nested-components': 'warn',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
