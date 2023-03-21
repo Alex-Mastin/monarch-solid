@@ -40,6 +40,7 @@
     "vitest": "^0.28.4"
   },
   "dependencies": {
+    "@astrojs/solid-js": "^2.1.0",
     "@astrojs/tailwind": "^3.1.1",
     "astro": "^2.0.18",
     "solid-js": "^1.6.10"
